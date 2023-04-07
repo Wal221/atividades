@@ -8,13 +8,13 @@ public class VerificaPalavraMaior {
                                                  // e como se a cada palavra separada por espaço e uma posição
                                            // do meu vetor de String , por isso um String de vetor o recebe outra String
                                             // com split. Pra resumir o meu vetor palavras esta assim: "palavras:["hoje", "bomdia","teste"]"
-        
+
         String maiorPalavra = palavras[0]; // Inicializa com a primeira palavra
 
         for (int i = 1; i < palavras.length; i++) { // Começa com o segundo elemento do array
             String palavra = palavras[i];
             if (palavra.length() > maiorPalavra.length()) {
-                maiorPalavra = palavra;
+                maiorPalavra = palavra;  //lembrando que se houver duas palavras de tamanhos iguais na String ele retorna a primeira
             }
         }
 
